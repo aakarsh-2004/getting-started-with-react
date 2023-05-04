@@ -1,6 +1,14 @@
-import "./styles.css";
-import Heading from './components/Heading';
-import Body from './components/body';
+import React from 'react';
+import "../../src/styles.css";
+import Heading from './Heading';
+import Body from './body';
+
+//Importing multiple things from a file
+import pi, {doublePi, triplePi} from './pi.js';
+
+// OR
+// Returns an object
+// import * as pi from './pi';
 
 const myName = "Aakarsh";
 const currYear = new Date().getFullYear()
@@ -35,6 +43,14 @@ export default function App() {
             <Body />
             <h1 style={dynamicStyle}>{finalMessage}</h1>
             <p>Copyright {currYear}</p>
+
+            <h1>{pi}</h1>
+            <h1>{doublePi()}</h1>
+            <h1>{triplePi()}</h1>
+
+            {/* <h1>{pi.default}</h1>
+            <h1>{pi.doublePi()}</h1>
+            <h1>{pi.triplePi()}</h1> */}
         </div>
     );
 }
