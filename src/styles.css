@@ -1,0 +1,18 @@
+.App {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+img {
+    height: 300px;
+    width: 400px;
+    box-shadow: 3px 3px 4px black;
+}
+span {
+    text-decoration: underline;
+}
